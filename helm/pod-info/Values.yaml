@@ -1,0 +1,18 @@
+replicaCount: 3
+
+image:
+  repository: stefanprodan/podinfo
+  tag: 5.1.1
+  pullPolicy: IfNotPresent
+
+service:
+  name: podinfo
+  type: ClusterIP
+  port: 80
+
+ingress:
+  enabled: true
+  hosts:
+    - host: demo.code-intelligence.local
+      paths:
+        - /

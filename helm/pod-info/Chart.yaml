@@ -1,0 +1,4 @@
+apiVersion: v2
+name: podinfo
+description: A Helm chart for deploying Podinfo
+version: 0.1.0
